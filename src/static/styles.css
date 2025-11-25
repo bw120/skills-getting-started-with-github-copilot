@@ -109,9 +109,12 @@ button:hover {
 }
 
 .message {
-  margin-top: 20px;
-  padding: 10px;
+  margin: 10px 0;
+  padding: 12px 15px;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .success {
@@ -141,4 +144,56 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Participants section styling */
+.participants-section {
+  margin-top: 12px;
+  /* keep label flush; only the list will be indented */
+}
+
+.participants-section strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+/* Increase indentation so bullets sit to the right of the label */
+.participants-list {
+  margin-top: 6px;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  line-height: 1.2;
+  font-size: 0.95rem;
+  color: #0d3b66;
+  background: #f3f6fa;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #c00;
+  font-weight: bold;
+  margin-left: 8px;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #a00;
+}
+
+/* Fallback when there are no participants yet */
+.no-participants {
+  margin-top: 6px;
+  color: #666;
+  font-style: italic;
+  font-size: 0.95rem;
 }
