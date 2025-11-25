@@ -142,3 +142,41 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section styling */
+.participants-section {
+  margin-top: 12px;
+  /* keep label flush; only the list will be indented */
+}
+
+.participants-section strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+/* Increase indentation so bullets sit to the right of the label */
+.participants-list {
+  margin-top: 6px;
+  margin-left: 20px;   /* move the whole list to the right */
+  padding-left: 18px;  /* keep the bullet gap visually balanced */
+  list-style: disc;
+}
+
+.participants-list li {
+  color: #0d3b66;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  line-height: 1.2;
+  font-size: 0.95rem;
+}
+
+/* Fallback when there are no participants yet */
+.no-participants {
+  margin-top: 6px;
+  color: #666;
+  font-style: italic;
+  font-size: 0.95rem;
+}
