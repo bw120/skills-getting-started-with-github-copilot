@@ -109,9 +109,12 @@ button:hover {
 }
 
 .message {
-  margin-top: 20px;
-  padding: 10px;
+  margin: 10px 0;
+  padding: 12px 15px;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .success {
@@ -159,18 +162,32 @@ footer {
 /* Increase indentation so bullets sit to the right of the label */
 .participants-list {
   margin-top: 6px;
-  margin-left: 20px;   /* move the whole list to the right */
-  padding-left: 18px;  /* keep the bullet gap visually balanced */
-  list-style: disc;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
-.participants-list li {
-  color: #0d3b66;
+.participant-item {
+  display: flex;
+  align-items: center;
   padding: 6px 10px;
   border-radius: 6px;
   margin-bottom: 6px;
   line-height: 1.2;
   font-size: 0.95rem;
+  color: #0d3b66;
+  background: #f3f6fa;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #c00;
+  font-weight: bold;
+  margin-left: 8px;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #a00;
 }
 
 /* Fallback when there are no participants yet */
